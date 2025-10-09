@@ -4,6 +4,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
+import { Button } from "../ui/button";
 
 const Nav = () => {
   const navItems = ["About", "Experience", "Projects", "Hobbies"];
@@ -23,22 +24,28 @@ const Nav = () => {
   };
 
   return (
-    <nav className="sticky  top-0 z-50 bg-white border-b">
+    <nav className="sticky top-0 z-50 bg-white border-b justify-items-center py-4 ">
       <NavigationMenu>
         <NavigationMenuList>
-          {navItems.map((items) => {
-            const targetId = items.toLocaleLowerCase();
-            return (
-              <NavigationMenuItem key={items}>
-                <NavigationMenuLink
-                  href={`#${targetId}`}
-                  onClick={(e) => handleClick(e, targetId)}
-                >
-                  {items}
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-            );
-          })}
+          <Button variant="outline" size="lg" className="ml-4">
+            Jihro Abendano
+          </Button>
+          <div className="flex ">
+            {navItems.map((items) => {
+              const targetId = items.toLocaleLowerCase();
+              return (
+                <NavigationMenuItem key={items}>
+                  <NavigationMenuLink
+                    href={`#${targetId}`}
+                    onClick={(e) => handleClick(e, targetId)}
+                    className="text-xl px-4"
+                  >
+                    {items}
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+              );
+            })}
+          </div>
         </NavigationMenuList>
       </NavigationMenu>
     </nav>
