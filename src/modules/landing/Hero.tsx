@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <HeroSection
       title="Jihro Abendano"
-      className="flex h-screen justify-center items-center"
+      className="flex h-screen justify-center items-center gap-20"
     >
       <Carousel className="w-[24rem] relative">
         <CarouselContent>
@@ -33,7 +33,7 @@ const Hero = () => {
           })}
         </CarouselContent>
         <CarouselPrevious className="left-4 " />
-        <CarouselNext className="right-4" />
+        <CarouselNext className="right-4 " />
       </Carousel>
     </HeroSection>
   );

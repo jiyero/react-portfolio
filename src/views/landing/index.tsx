@@ -7,7 +7,7 @@ import Hobbies from "@/modules/landing/Hobbies";
 
 function Index() {
   return (
-    <div className="font-raleway">
+    <div className="font-raleway bg-background text-primary">
       <Nav />
       <Hero />
       <About />

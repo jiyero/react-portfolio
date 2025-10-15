@@ -24,10 +24,15 @@ const Nav = () => {
   };
 
   return (
-    <nav className="sticky top-0 z-50 bg-white border-b justify-items-center py-4 ">
+    <nav className="sticky top-0 z-50 bg-secondary justify-items-center py-4 ">
       <NavigationMenu>
         <NavigationMenuList>
-          <Button variant="outline" size="lg" className="ml-4">
+          <Button
+            variant="outline"
+            size="lg"
+            className="ml-4 bg-transparent"
+            id="hero"
+          >
             Jihro Abendano
           </Button>
           <div className="flex ">
