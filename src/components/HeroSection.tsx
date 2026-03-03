@@ -19,7 +19,7 @@ const HeroSection = ({
       id={id}
     >
       {children}
-      <h1 className="text-7xl font-bold">{title}</h1>
+      <h1 className="text-3xl sm:text-7xl font-bold">{title}</h1>
     </section>
   );
 };

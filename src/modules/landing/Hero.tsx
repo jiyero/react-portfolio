@@ -15,7 +15,7 @@ const Hero = () => {
   const images = [spongebob, patrick, squidward];
   return (
     <HeroSection title="Jihro Abendano" className=" gap-20" id="hero">
-      <Carousel className="w-[24rem] relative">
+      <Carousel className="sm:w-[24rem] w-[18rem]">
         <CarouselContent>
           {images.map((img, index) => {
             return (

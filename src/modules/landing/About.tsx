@@ -1,23 +1,18 @@
 import Section from "../../components/Section";
 
-const SkillsItems = [
-  {
-    name: "JavaScript",
-    image: "js.png",
-  },
-];
-
 const About = () => {
   return (
-    <div className="flex flex-col items-center">
-      <Section title="About" className="gap-20" id="about">
-        <p className="w-1/4 text-lg">
+    <Section title="" className="gap-16 bg-accent" id="about">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-20 mx-4 text-center">
+        <h1 className="text-6xl font-bold">About</h1>
+        <p className="max-w-md text-lg">
           Hey there! I'm Jihro Abendano, I'm currently a Frontend developer from
           the Philippines and I have been developing web designs with React for
-          2 years, 1 year professionally and 1 year on my final year in college.{" "}
+          2 years, 1 year professionally and 1 year on my final year in college.
         </p>
-      </Section>
-      <div className="relative flex overflow-x-hidden w-screen">
+      </div>
+
+      <div className="relative flex overflow-x-hidden w-full max-w-3xl">
         <div className="animate-marquee py-12 whitespace-nowrap">
           <span className="mx-4 text-4xl">Marquee Item 1</span>
           <span className="mx-4 text-4xl">Marquee Item 2</span>
@@ -25,6 +20,7 @@ const About = () => {
           <span className="mx-4 text-4xl">Marquee Item 4</span>
           <span className="mx-4 text-4xl">Marquee Item 5</span>
         </div>
+
         <div className="absolute top-0 animate-marquee2 py-12 whitespace-nowrap">
           <span className="mx-4 text-4xl">Marquee Item 1</span>
           <span className="mx-4 text-4xl">Marquee Item 2</span>
@@ -33,7 +29,7 @@ const About = () => {
           <span className="mx-4 text-4xl">Marquee Item 5</span>
         </div>
       </div>
-    </div>
+    </Section>
   );
 };
 
