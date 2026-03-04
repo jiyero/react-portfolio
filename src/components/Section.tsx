@@ -10,7 +10,7 @@ type SectionProps = {
 const Section = ({ title, children, id, className = "" }: SectionProps) => {
   return (
     <section
-      className={`flex flex-col justify-center items-center h-screen ${className}`}
+      className={`flex flex-col justify-center items-center min-h-screen ${className}`}
       id={id}
     >
       <h1 className="text-6xl font-bold">{title}</h1>

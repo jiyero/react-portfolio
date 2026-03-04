@@ -11,8 +11,8 @@ function Index() {
       <Nav />
       <Hero />
       <About />
-      {/* <Experience />
-      <Projects />
+      <Experience />
+      {/* <Projects />
       <Hobbies /> */}
     </div>
   );
